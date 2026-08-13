@@ -96,7 +96,7 @@ export default function CarFormModal({
   }
 
   const inputCls =
-    "w-full rounded-[10px] border border-line bg-white px-3 py-2.5 text-sm outline-none focus:border-orange-brand";
+    "w-full rounded-[10px] border border-line bg-white px-3 py-2.5 text-sm outline-none focus:border-navy";
   const labelCls =
     "mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted";
 
@@ -217,12 +217,16 @@ export default function CarFormModal({
           <button
             type="submit"
             disabled={busy}
-            className="flex-1 rounded-xl bg-orange-brand py-3 text-sm font-semibold text-white hover:bg-orange-dark disabled:opacity-60"
+            className="flex-1 rounded-xl bg-navy py-3 text-sm font-semibold text-white hover:bg-navy-deep disabled:opacity-60"
           >
             {busy ? "Menyimpan…" : car ? "Simpan Perubahan" : "Tambah ke Stok"}
           </button>
         </div>
       </form>
+    </div>
+  );
+}
+>
     </div>
   );
 }

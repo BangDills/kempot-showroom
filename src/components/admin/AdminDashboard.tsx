@@ -126,7 +126,7 @@ export default function AdminDashboard({
             setEditing(null);
             setFormOpen(true);
           }}
-          className="rounded-lg bg-orange-brand px-4 py-2.5 text-[13px] font-semibold text-white hover:bg-orange-dark"
+          className="rounded-lg bg-navy px-4 py-2.5 text-[13px] font-semibold text-white hover:bg-navy-deep"
         >
           + Tambah Mobil
         </button>
@@ -254,10 +254,17 @@ export default function AdminDashboard({
       )}
 
       {toast && (
-        <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-ink px-5 py-3 text-sm font-semibold text-white">
+        <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-navy px-5 py-3 text-sm font-semibold text-white">
           {toast}
         </div>
       )}
     </div>
+  );
+}
+}
+    </div>
+  );
+}
+>
   );
 }

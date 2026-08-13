@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Archivo, Space_Grotesk } from "next/font/google";
+import { Archivo, Inter } from "next/font/google";
 import "./globals.css";
 
 const archivo = Archivo({
   subsets: ["latin"],
   variable: "--font-archivo",
-  weight: ["400", "600", "700", "800", "900"],
+  weight: ["500", "700", "800", "900"],
 });
 
-const spaceGrotesk = Space_Grotesk({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-space",
+  variable: "--font-inter",
   weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Kempot Showroom — Mobil Bekas Berkualitas",
+  title: "Kempot Showroom — Jual Beli Mobil Bekas Terpercaya",
   description:
     "Mobil bekas berkualitas dengan harga tunai transparan. Setiap unit lolos inspeksi 175 titik.",
 };
@@ -25,9 +25,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="id">
-      <body
-        className={`${archivo.variable} ${spaceGrotesk.variable} antialiased`}
-      >
+      <body className={`${archivo.variable} ${inter.variable} antialiased`}>
         {children}
       </body>
     </html>

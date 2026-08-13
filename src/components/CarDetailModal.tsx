@@ -44,13 +44,13 @@ export default function CarDetailModal({
           className="h-72 w-full rounded-t-3xl object-cover"
         />
         <div className="p-7">
-          <span className="mb-2.5 inline-block rounded-lg bg-ink/85 px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wide text-white">
-            {car.badge || "Lolos Inspeksi"}
+          <span className="mb-2.5 inline-block rounded-md bg-brand px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wide text-navy">
+            🚗 {car.badge || "Kempot Certified"}
           </span>
-          <h3 className="font-display text-2xl font-black tracking-tight">
-            {car.brand} {car.model} {car.year}
+          <h3 className="font-display text-2xl font-black tracking-tight text-ink">
+            {car.year} {car.brand} {car.model}
           </h3>
-          <div className="my-4 font-display text-3xl font-black text-orange-brand">
+          <div className="my-4 font-display text-3xl font-black text-price">
             {rupiah(car.price)}
           </div>
           <div className="mb-5 grid grid-cols-2 gap-2.5 sm:grid-cols-3">
@@ -59,7 +59,7 @@ export default function CarDetailModal({
                 <small className="mb-0.5 block text-[11px] uppercase tracking-wider text-muted">
                   {label}
                 </small>
-                <b className="text-sm">{value || "—"}</b>
+                <b className="text-sm text-ink">{value || "—"}</b>
               </div>
             ))}
           </div>
@@ -77,7 +77,7 @@ export default function CarDetailModal({
             </a>
             <button
               onClick={onClose}
-              className="rounded-xl border border-line px-6 py-3.5 text-[15px] font-semibold hover:border-ink"
+              className="rounded-xl border border-line px-6 py-3.5 text-[15px] font-semibold text-ink hover:border-navy"
             >
               Tutup
             </button>

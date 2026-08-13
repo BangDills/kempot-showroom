@@ -30,7 +30,7 @@ export default function AdminLoginPage() {
   }
 
   const inputCls =
-    "w-full rounded-[10px] border border-line bg-white px-3.5 py-3 text-sm outline-none focus:border-orange-brand";
+    "w-full rounded-[10px] border border-line bg-white px-3.5 py-3 text-sm outline-none focus:border-navy";
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-paper px-5">
@@ -38,11 +38,10 @@ export default function AdminLoginPage() {
         onSubmit={handleLogin}
         className="w-full max-w-sm rounded-3xl border border-line bg-white p-9"
       >
-        <div className="mb-1 flex items-center gap-2.5 font-display text-lg font-black">
-          <span className="grid size-8 place-items-center rounded-lg bg-ink text-orange-brand">K</span>
-          Kempot <em className="not-italic text-orange-brand">Showroom</em>
+        <div className="mb-1 font-display text-lg font-black text-navy">
+          KEMPOT<span className="text-brand-dark">.</span>
         </div>
-        <h1 className="font-display mt-5 text-2xl font-black">Masuk Admin</h1>
+        <h1 className="font-display mt-5 text-2xl font-black text-navy">Masuk Admin</h1>
         <p className="mb-6 mt-1 text-[13px] text-muted">
           Area khusus pengelola untuk mengatur stok mobil.
         </p>
@@ -82,7 +81,7 @@ export default function AdminLoginPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full rounded-xl bg-orange-brand py-3 text-[15px] font-semibold text-white hover:bg-orange-dark disabled:opacity-60"
+          className="w-full rounded-xl bg-navy py-3 text-[15px] font-semibold text-white hover:bg-navy-deep disabled:opacity-60"
         >
           {loading ? "Memeriksa…" : "Masuk"}
         </button>
@@ -95,4 +94,5 @@ export default function AdminLoginPage() {
       </form>
     </main>
   );
+}
 }
