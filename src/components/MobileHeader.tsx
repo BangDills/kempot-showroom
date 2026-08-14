@@ -36,24 +36,14 @@ export default function MobileHeader() {
             <a href="#jual">Jual Mobil</a>
             <a href="#cara">Cara Kerja</a>
           </nav>
-          <div className="ml-auto flex items-center gap-2.5">
-            <a
-              href={waLink(`Halo ${SHOWROOM_NAME}!`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden text-sm font-semibold text-navy sm:block"
-            >
-              ☎ Hubungi Kami
-            </a>
-            <a
-              href="/admin"
-              aria-label="Masuk admin"
-              className="grid size-9 place-items-center rounded-full bg-navy text-sm text-white md:w-auto md:rounded-lg md:px-4"
-            >
-              <span className="md:hidden">●</span>
-              <span className="hidden md:inline">Admin</span>
-            </a>
-          </div>
+          <a
+            href={waLink(`Halo ${SHOWROOM_NAME}!`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-auto hidden text-sm font-semibold text-navy sm:block"
+          >
+            ☎ Hubungi Kami
+          </a>
         </div>
       </header>
 
@@ -79,7 +69,6 @@ export default function MobileHeader() {
             ["Beli Mobil", "#katalog"],
             ["Jual Mobil", "#jual"],
             ["Cara Jual & Beli", "#cara"],
-            ["Dashboard Admin", "/admin"],
           ].map(([label, href]) => (
             <a key={label} href={href} onClick={() => setOpen(false)} className="border-b border-line px-5 py-4">
               {label} <span className="float-right text-muted">›</span>

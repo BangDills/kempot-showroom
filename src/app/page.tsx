@@ -4,11 +4,9 @@ import { SHOWROOM_NAME, waLink } from "@/lib/config";
 import Catalog from "@/components/Catalog";
 import MobileCarRail from "@/components/MobileCarRail";
 import MobileHeader from "@/components/MobileHeader";
+import VehicleDiscovery from "@/components/VehicleDiscovery";
 
 export const dynamic = "force-dynamic";
-
-const BRAND_LOGOS = ["Honda", "Toyota", "Suzuki", "Nissan", "Mitsubishi", "Daihatsu"];
-const BODY_TYPES = ["Hatchback", "MPV", "SUV", "Sedan", "Wagon", "Pickup"];
 
 export default async function Home() {
   const supabase = await createClient();
@@ -80,22 +78,7 @@ export default async function Home() {
           <span className="shrink-0 rounded-full bg-sky-50 px-2.5 py-1 text-[11px] font-bold text-sky-700">KEMPOT Value</span>
         </div>
 
-        <div className="mt-4 flex gap-5 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {BRAND_LOGOS.map((b) => (
-            <a key={b} href="#katalog" className="w-14 shrink-0 text-center">
-              <span className="mx-auto grid size-9 place-items-center rounded-full border border-line bg-white font-display text-sm font-black text-navy">{b[0]}</span>
-              <span className="mt-1.5 block text-[11px] text-ink">{b}</span>
-            </a>
-          ))}
-        </div>
-        <div className="mt-4 flex gap-4 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {BODY_TYPES.map((t) => (
-            <a key={t} href="#katalog" className="w-14 shrink-0 text-center">
-              <span className="block text-3xl leading-none text-navy">▰</span>
-              <span className="mt-1 block text-[11px]">{t}</span>
-            </a>
-          ))}
-        </div>
+        <VehicleDiscovery />
         <div className="mt-4 flex gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {["Di bawah Rp 150 jt", "Rp 150–250 jt", "Rp 250–350 jt", "Di atas Rp 350 jt"].map((b) => (
             <a key={b} href="#katalog" className="shrink-0 rounded-[3px] bg-paper px-3 py-2 text-[11px] text-ink-soft">{b}</a>
