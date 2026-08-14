@@ -226,7 +226,3 @@ export default function CarFormModal({
     </div>
   );
 }
->
-    </div>
-  );
-}

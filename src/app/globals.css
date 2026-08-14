@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  /* Palet ala Carsome: kuning cerah + navy gelap + putih */
-  --color-brand: #ffd100;
-  --color-brand-dark: #f0c400;
+  /* Palet ala Carsome, aksen BIRU (bukan oranye) */
+  --color-brand: #1f6fe0;
+  --color-brand-dark: #1859bd;
   --color-navy: #12294a;
   --color-navy-deep: #0c1f3a;
-  --color-price: #e8380d;
+  --color-price: #d43a2f;
   --color-ink: #1c2430;
   --color-ink-soft: #55617a;
   --color-muted: #93a0b4;
