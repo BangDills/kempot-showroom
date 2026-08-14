@@ -1,10 +1,10 @@
 const BRANDS = [
-  { name: "Honda", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/honda.svg" },
-  { name: "Toyota", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/toyota.svg" },
-  { name: "Suzuki", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/suzuki.svg" },
-  { name: "Nissan", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/nissan.svg" },
-  { name: "Mitsubishi", logo: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mitsubishi.svg" },
-  { name: "Daihatsu", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Daihatsu_Logo.svg/320px-Daihatsu_Logo.svg.png" },
+  { name: "Honda", logo: "/brands/honda.svg" },
+  { name: "Toyota", logo: "/brands/toyota.svg" },
+  { name: "Suzuki", logo: "/brands/suzuki.svg" },
+  { name: "Nissan", logo: "/brands/nissan.svg" },
+  { name: "Mitsubishi", logo: "/brands/mitsubishi.svg" },
+  { name: "Daihatsu", logo: "/brands/daihatsu.svg" },
 ];
 
 const TYPES = ["Hatchback", "MPV", "SUV", "Sedan", "Wagon", "Pickup"] as const;
